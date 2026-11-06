@@ -1,0 +1,50 @@
+# Python and local environments
+__pycache__/
+*.py[cod]
+.DS_Store
+.ipynb_checkpoints/
+.venv/
+venv/
+.conda/
+.env
+.env.*
+!.env.example
+
+# Credentials and machine-local configuration
+.local/
+*.token
+*.api_key
+*.password
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+
+# Generated results and unbundled model responses. The 14 main-experiment
+# response sets in data/llm_behavior/ are included in this repository.
+data/llm_behavior_culture/
+data/llm_behavior_prompt_variants/
+outputs/
+reports/figures/
+release_artifacts/
+*.log
+*.done
+**/.progress.json
+**/.extraction_done
+
+# Model weights, raw activations, and large intermediate caches
+*.npz
+*.npy
+*.pt
+*.pth
+*.safetensors
+*.ckpt
+*.bin
+*.pkl
+*.pickle
+*.joblib
+*.arrow
+
+# Drafts and local manuscript material are not part of this code release.
+reports/docs/
+reports/manuscript/
